@@ -1,31 +1,31 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* 将元素的默认样式全部统一 */
-body *{
-  margin: 0;
-  padding: 0;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-/* 公共样式---public style */
-.flex{
-  display: flex;
-}
-.flex-between{
-  /* 让flex布局里的元素呈两端对齐方式 */
-justify-content: space-between;
-}
-ul{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* 将元素的默认样式全部统一 */
+  body *{
+    margin: 0;
+    padding: 0;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  /* 公共样式---public style */
+  .flex{
+    display: flex;
+  }
+  .flex-between{
+    /* 让flex布局里的元素呈两端对齐方式 */
+  justify-content: space-between;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
