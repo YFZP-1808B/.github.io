@@ -8,7 +8,10 @@ const leftNav = [
   { iconType: 'video-camera', text: '全局安装与配置', id: 'Install' },
   { iconType: 'read', text: 'cass使用', id: 'Cass' },
   { iconType: 'save', text: '生命周期', id: 'LifeCycle' },
-  { iconType: 'switcher', text: 'props使用', id: 'PropsContent' }
+  { iconType: 'switcher', text: 'props使用', id: 'PropsContent' },
+  { iconType: "video-camera", text: "组建区别", id: "Classdiff" },
+  { iconType: "video-camera", text: "顶级API", id: "Toplevelapi" },
+  { iconType: "video-camera", text: "渲染原理", id: "Rendering" },
 ];
 export default class Mylayout extends React.Component {
   constructor() {

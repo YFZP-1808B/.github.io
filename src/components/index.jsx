@@ -11,6 +11,12 @@ import Cass from './Cass-Z/index';
 //生命周期
 import LifeCycle from './LifeCycle-Z/';
 //props怎么控制组件的显示内容
+import Classdiff from './Classdiff/Classdiff';
+//组件的区别
+import Rendering from './Rendering/Rendering';
+//渲染原理
+import Toplevelapi from './Toplevelapi/Toplevelapi'
+//顶级API
 import PropsContent from './PropsContent-Z/';
 
 export default class Index extends Component {
@@ -51,6 +57,14 @@ export default class Index extends Component {
         break;
       case 'PropsContent':
         Dom = <PropsContent />;
+        case 'Classdiff':
+            Dom = <Classdiff/>;
+            break;
+            case 'Toplevelapi':
+            Dom = <Toplevelapi/>;
+              break;
+          case 'Rendering':
+            Dom = <Rendering/>;
     }
     return (
       <React.Fragment>
