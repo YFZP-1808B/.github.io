@@ -1,11 +1,14 @@
-import React from "react";
-import { Layout, Menu, Icon } from "antd";
+import React from 'react';
+import { Layout, Menu, Icon } from 'antd';
 const { Header, Sider, Content } = Layout;
 // 左侧一级导航的数据
 const leftNav = [
-  { iconType: "solution", text: "React概述", id: "ReactBase" },
-  { iconType: "video-camera", text: "组件类型", id: "ComponentType" },
-  { iconType: "video-camera", text: "全局安装与配置", id: "Install" }
+  { iconType: 'solution', text: 'React概述', id: 'ReactBase' },
+  { iconType: 'video-camera', text: '组件类型', id: 'ComponentType' },
+  { iconType: 'video-camera', text: '全局安装与配置', id: 'Install' },
+  { iconType: 'read', text: 'cass使用', id: 'Cass' },
+  { iconType: 'save', text: '生命周期', id: 'LifeCycle' },
+  { iconType: 'switcher', text: 'props使用', id: 'PropsContent' }
 ];
 export default class Mylayout extends React.Component {
   constructor() {
@@ -34,7 +37,7 @@ export default class Mylayout extends React.Component {
       <Layout>
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             {leftNav.map(item => {
               return (
                 <Menu.Item
@@ -51,18 +54,18 @@ export default class Mylayout extends React.Component {
           </Menu>
         </Sider>
         <Layout>
-          <Header style={{ background: "#fff", padding: 0 }}>
+          <Header style={{ background: '#fff', padding: 0 }}>
             <Icon
               className="trigger"
-              type={this.state.collapsed ? "menu-unfold" : "menu-fold"}
+              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
           </Header>
           <Content
             style={{
-              margin: "24px 16px",
+              margin: '24px 16px',
               padding: 24,
-              background: "#fff",
+              background: '#fff',
               minHeight: 280
             }}
           >
