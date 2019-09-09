@@ -11,7 +11,19 @@ import Cass from './Cass-Z/index';
 //生命周期
 import LifeCycle from './LifeCycle-Z/';
 //props怎么控制组件的显示内容
+import Classdiff from './Classdiff/Classdiff';
+//组件的区别
+import Rendering from './Rendering/Rendering';
+//渲染原理
+import Toplevelapi from './Toplevelapi/Toplevelapi'
+//顶级API
 import PropsContent from './PropsContent-Z/';
+//事件的写法与跨域的使用
+import Blog from './blog/index';
+//jsconfig.json
+import Route from './route/index';
+//antd框架
+import Frame from './frame/frames'
 
 export default class Index extends Component {
   constructor() {
@@ -51,7 +63,28 @@ export default class Index extends Component {
         break;
       case 'PropsContent':
         Dom = <PropsContent />;
+<<<<<<< HEAD
         break;
+=======
+        case 'Classdiff':
+            Dom = <Classdiff/>;
+            break;
+            case 'Toplevelapi':
+            Dom = <Toplevelapi/>;
+              break;
+          case 'Rendering':
+            Dom = <Rendering/>;
+            break;
+            case 'Blog':
+            Dom = <Blog/>;
+              break;
+              case 'Route':
+              Dom = <Route/>;
+                break;
+                case 'Frame':
+                Dom = <Frame/>;
+                  break;
+>>>>>>> a424149d568eba34d41415f55d95e724ab91c6f1
     }
     return (
       <React.Fragment>
