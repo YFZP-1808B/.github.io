@@ -51,6 +51,7 @@ export default class Index extends Component {
         break;
       case 'PropsContent':
         Dom = <PropsContent />;
+        break;
     }
     return (
       <React.Fragment>
