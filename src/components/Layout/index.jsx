@@ -5,7 +5,11 @@ const { Header, Sider, Content } = Layout;
 const leftNav = [
   { iconType: "solution", text: "React概述", id: "ReactBase" },
   { iconType: "video-camera", text: "组件类型", id: "ComponentType" },
-  { iconType: "video-camera", text: "全局安装与配置", id: "Install" }
+  { iconType: "video-camera", text: "全局安装脚手架", id: "Install" },
+  { iconType: "edit", text: "事件的写法", id: "Blog" },
+  { iconType: "video-camera", text: "jsconfig.json", id: "Route" },
+  { iconType: "book", text: "antd框架", id: "Frames" }
+ 
 ];
 export default class Mylayout extends React.Component {
   constructor() {

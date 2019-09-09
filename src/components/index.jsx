@@ -1,11 +1,19 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Mylayout from "./Layout/index";
 // 引入react基础概述
 import ReactBase from "./ReacrtBase/index";
 // react组件分类
 import ComponentType from "./componentType/index";
 // 全局安装脚手架
-import Install from './Install/index'
+import Install from "./Install/index";
+// 事件的写法与跨域的使用
+import Blog from "./blog/index";
+//jsconfig.json 
+import Route from "./route/index";
+//antd框架
+import Frames from "./frame/frames";
+
+
 export default class Index extends Component {
   constructor() {
     super();
@@ -34,22 +42,28 @@ export default class Index extends Component {
         Dom = <ComponentType />;
         break;
         case "Install":
-          Dom = <Install/>
+        Dom = <Install />;
+        break;
+      case "Blog":
+        Dom = <Blog />;
+        break;
+        case "Route":
+        Dom = <Route />;
+        break;
+      case "Frames":
+        Dom = <Frames />;
+        break;
     }
     return (
       <React.Fragment>
- <Mylayout getsoudata={this.getSouData}>
-        {
-          Dom
-          // this.state.isCom === 'ReactBase' ? <ReactBase/> :
-          // this.state.isCom === 'ComponentType' ? <ComponentType/>
-       
-        }
-        
-      </Mylayout>
-    
+        <Mylayout getsoudata={this.getSouData}>
+          {
+            Dom
+            // this.state.isCom === 'ReactBase' ? <ReactBase/> :
+            // this.state.isCom === 'ComponentType' ? <ComponentType/>
+          }
+        </Mylayout>
       </React.Fragment>
-     
     );
   }
 }
