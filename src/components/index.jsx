@@ -18,6 +18,12 @@ import Rendering from './Rendering/Rendering';
 import Toplevelapi from './Toplevelapi/Toplevelapi'
 //顶级API
 import PropsContent from './PropsContent-Z/';
+//事件的写法与跨域的使用
+import Blog from './blog/index';
+//jsconfig.json
+import Route from './route/index';
+//antd框架
+import Frame from './frame/frames'
 
 export default class Index extends Component {
   constructor() {
@@ -65,6 +71,16 @@ export default class Index extends Component {
               break;
           case 'Rendering':
             Dom = <Rendering/>;
+            break;
+            case 'Blog':
+            Dom = <Blog/>;
+              break;
+              case 'Route':
+              Dom = <Route/>;
+                break;
+                case 'Frame':
+                Dom = <Frame/>;
+                  break;
     }
     return (
       <React.Fragment>

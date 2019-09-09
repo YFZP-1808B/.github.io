@@ -12,6 +12,9 @@ const leftNav = [
   { iconType: "video-camera", text: "组建区别", id: "Classdiff" },
   { iconType: "video-camera", text: "顶级API", id: "Toplevelapi" },
   { iconType: "video-camera", text: "渲染原理", id: "Rendering" },
+  { iconType: "read", text: "事件写法与跨域使用", id: "Blog" },
+  { iconType: "video-camera", text: "jsconfig.json", id: "Route" },
+  { iconType: "book", text: "antd框架", id: "Frame" },
 ];
 export default class Mylayout extends React.Component {
   constructor() {
