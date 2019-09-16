@@ -8,14 +8,14 @@ import Install from "./Install/index";
 //表单的使用
 import Cass from "./Cass-Z/index";
 //边界错误
-import LifeCycle from "./LifeCycle-Z/";
+import LifeCycle from "./LifeCycle-Z";
 //React中的列表和diff
 import PropsContent   from "./PropsContent-Z/index";
 //event事件对象
 import Classdiff from "./Classdiff/Classdiff";
 
 
-export default class Index extends Component {
+export default class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -54,11 +54,7 @@ export default class Index extends Component {
       case "PropsContent":
         Dom = <PropsContent />;
         break;
-        
 
-
-
-        
     }
     return (
       <React.Fragment>

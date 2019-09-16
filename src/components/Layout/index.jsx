@@ -7,7 +7,6 @@ const leftNav = [
   { iconType: 'video-camera', text: '条件渲染', id: 'Install' },
   { iconType: 'read', text: '表单的使用', id: 'Cass' },
   { iconType: 'save', text: '边界错误', id: 'LifeCycle' },
-  
   { iconType: 'switcher', text: 'React中的列表和diff', id: 'PropsContent' },
   { iconType: "video-camera", text: "event事件对象", id: "Classdiff" },
   

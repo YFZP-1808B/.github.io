@@ -7,7 +7,7 @@ import "./asets/index.css";
 // 引入antd样式
 import "antd/dist/antd.css";
 // 引入一个组件
-import App from "./components/index";
+import App from './Login/index';
 // 引入离线缓存代码
 import * as serviceWorker from "./serviceWorker";
 // 使用ReactDOM渲染组件并挂载到根元素上
