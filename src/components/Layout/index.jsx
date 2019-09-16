@@ -1,15 +1,16 @@
-import React from "react";
-import { Layout, Menu, Icon } from "antd";
+import React from 'react';
+import { Layout, Menu, Icon } from 'antd';
 const { Header, Sider, Content } = Layout;
 // 左侧一级导航的数据
 const leftNav = [
-  { iconType: "solution", text: "React概述", id: "ReactBase" },
-  { iconType: "video-camera", text: "组件类型", id: "ComponentType" },
-  { iconType: "video-camera", text: "全局安装脚手架", id: "Install" },
-  { iconType: "edit", text: "事件的写法", id: "Blog" },
-  { iconType: "video-camera", text: "jsconfig.json", id: "Route" },
-  { iconType: "book", text: "antd框架", id: "Frames" }
- 
+  { iconType: 'video-camera', text: '受控组件和非受控组价', id: 'ComponentType' },
+  { iconType: 'video-camera', text: '条件渲染', id: 'Install' },
+  { iconType: 'read', text: '表单的使用', id: 'Cass' },
+  { iconType: 'save', text: '边界错误', id: 'LifeCycle' },
+  
+  { iconType: 'switcher', text: 'React中的列表和diff', id: 'PropsContent' },
+  { iconType: "video-camera", text: "event事件对象", id: "Classdiff" },
+  
 ];
 export default class Mylayout extends React.Component {
   constructor() {
@@ -38,7 +39,7 @@ export default class Mylayout extends React.Component {
       <Layout>
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             {leftNav.map(item => {
               return (
                 <Menu.Item
@@ -55,18 +56,18 @@ export default class Mylayout extends React.Component {
           </Menu>
         </Sider>
         <Layout>
-          <Header style={{ background: "#fff", padding: 0 }}>
+          <Header style={{ background: '#fff', padding: 0 }}>
             <Icon
               className="trigger"
-              type={this.state.collapsed ? "menu-unfold" : "menu-fold"}
+              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
           </Header>
           <Content
             style={{
-              margin: "24px 16px",
+              margin: '24px 16px',
               padding: 24,
-              background: "#fff",
+              background: '#fff',
               minHeight: 280
             }}
           >
