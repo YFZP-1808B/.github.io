@@ -13,7 +13,8 @@ import LifeCycle from "./LifeCycle-Z";
 import PropsContent   from "./PropsContent-Z/index";
 //event事件对象
 import Classdiff from "./Classdiff/Classdiff";
-
+//调查问卷
+import Questionnaire from "./Questionnaire/index"
 
 export default class Home extends Component {
   constructor() {
@@ -53,6 +54,9 @@ export default class Home extends Component {
         break;
       case "PropsContent":
         Dom = <PropsContent />;
+        break;
+        case "Questionnaire":
+        Dom = <Questionnaire/>;
         break;
 
     }

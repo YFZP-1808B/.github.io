@@ -9,7 +9,7 @@ const leftNav = [
   { iconType: 'save', text: '边界错误', id: 'LifeCycle' },
   { iconType: 'switcher', text: 'React中的列表和diff', id: 'PropsContent' },
   { iconType: "video-camera", text: "event事件对象", id: "Classdiff" },
-  
+  { iconType: "video-camera", text: "调查问卷", id: "Questionnaire" }
 ];
 export default class Mylayout extends React.Component {
   constructor() {
